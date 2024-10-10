@@ -1,19 +1,21 @@
 let player = 'O';
 let firstGame = true;
+let winner = null;
 
 function updateValue(event) {
   const square = event.target;
-  let winner;
+  if (winner) return;
 
   if (square.classList.contains('square')) {
     const isSquareEmpty = /^\s*$/gi.test(square.textContent);
+
     if(isSquareEmpty) {
       const playerValue = currentPlayer();
       square.setAttribute('data-value', playerValue);
-      winner = checkWinner(playerValue);
-      console.log(winner);
       square.textContent = playerValue;
+      winner = checkWinner(playerValue);
     }
+
     displayInfo(winner);
   }
 }
