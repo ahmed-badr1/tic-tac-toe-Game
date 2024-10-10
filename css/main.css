@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tic-tac-toe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tic-tac-toe h2.info {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.tic-tac-toe .squares {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
+  gap: 1px;
+}
+
+.tic-tac-toe .square {
+  border: 1px solid black;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
