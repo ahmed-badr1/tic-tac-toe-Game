@@ -11,17 +11,30 @@
 </head>
 <body>
   <div class="tic-tac-toe">
-    <h2 class="info"></h2>
-    <div class="squares">
-      <button id="1" class="square"></button>
-      <button id="2" class="square"></button>
-      <button id="3" class="square"></button>
-      <button id="4" class="square"></button>
-      <button id="5" class="square"></button>
-      <button id="6" class="square"></button>
-      <button id="7" class="square"></button>
-      <button id="8" class="square"></button>
-      <button id="9" class="square"></button>
+    <div class="winner-count">
+      <p class="o">O: <span class="o-count"></span></p>
+      <p class="x">X: <span class="x-count"></span></p>
+      <p class="draw">Draw: <span class="draw-count"></span></p>
+    </div>
+    <div class="game">
+      <h2 class="info"></h2>
+      <div class="squares">
+        <button id="1" class="square"></button>
+        <button id="2" class="square"></button>
+        <button id="3" class="square"></button>
+        <button id="4" class="square"></button>
+        <button id="5" class="square"></button>
+        <button id="6" class="square"></button>
+        <button id="7" class="square"></button>
+        <button id="8" class="square"></button>
+        <button id="9" class="square"></button>
+      </div>
+    </div>
+    <div class="game-controller">
+      <!--If I add AI play, I will turn this on -->
+      <button class="swap" hidden>Player Swap</button>
+      <button class="again" hidden>Again</button>
+      <button class="reset">Reset</button>
     </div>
   </div>
   <script src="js/main.js"></script>
